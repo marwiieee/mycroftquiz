@@ -1,7 +1,7 @@
 from mycroft import MycroftSkill, intent_file_handler
 import random
 
-class QuizGameSkill(MycroftSkill):
+class QuizGame(MycroftSkill):
     def __init__(self):
         super().__init__()
         self.questions = [
@@ -44,4 +44,4 @@ class QuizGameSkill(MycroftSkill):
             self.speak('Sorry, there is no question to repeat.')
 
 def create_skill():
-    return QuizGameSkill()
+    return QuizGame()
